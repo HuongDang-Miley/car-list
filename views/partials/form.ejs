@@ -1,0 +1,18 @@
+<form action="/cars/add-car" method="POST">
+    <label for="name">Car's Name</label></br>
+    <textarea name="name" id="name" cols="15" rows="1"></textarea></br>
+
+    <label for="type">Type</label></br>
+    <textarea name="type" id="type" cols="15" rows="1"></textarea></br>
+
+    <label for="year">Year</label></br>
+    <textarea name="year" id="year" cols="15" rows="1"></textarea></br>
+
+    <button type="submit" style="margin-top: 20px; margin-right: 20px; margin-bottom: 20px;">Add A Car</button>
+</form>
+
+<div>
+    <% carsList.forEach(element => { %>
+    <li> <%= element.name %>, <%= element.type %>, <%= element.year %> </li>
+    <% }) %>
+</div>
